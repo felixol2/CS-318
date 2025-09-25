@@ -1,0 +1,27 @@
+header{
+    background-image: url(images/pizzabackdrop.jpg);
+}
+h1{
+    background-color: white;
+   width: 18rem;
+   font-size: 250%;
+}
+nav{
+    background-color: white;
+    width: 15rem;
+    font-size: 120%;
+}
+p{
+    font-size: 110%;
+}
+.cheese{
+background-image: url(images/papaspizzeria.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 50%;
+}
+iframe:hover{
+    border: 5rem solid purple;
+
+}
+
