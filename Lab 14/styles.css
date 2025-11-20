@@ -1,17 +1,16 @@
 body{
     background-color: #330202;
-    font: #fff;
+    font: #fff;/*Should be color not font*/
     font-family: 'EB Garamond', serif;
     margin: 0;
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: #0f0f0f;
   color: #d9ba6c;
 }
 h1,h2{
     font-family: 'Cinzel Decorative', cursive;
-    font: #d9ba6c;
+    font: #d9ba6c;/*Should be color not font*/
 }
 header {
   background-color: #161d2d;
@@ -79,10 +78,32 @@ section:nth-child(2) {
   display: block;
 }
 
+/*In the four declarations below you should have a number value in each of the grid properties to place the items in the correct location on the grid. If you look in the instructions I have a grid image with the values for reference.*/
 section > img {
   max-height: 10rem;
+  grid-row-start:;
+  grid-row-end:;
+  grid-column-start:;
+  grid-column-end:;
 }
-
+section > h3{
+  grid-row-start:;
+  grid-row-end:;
+  grid-column-start:;
+  grid-column-end:;
+}
+section > h4{
+  grid-row-start:;
+  grid-row-end:;
+  grid-column-start:;
+  grid-column-end:;
+}
+section > p{
+  grid-row-start:;
+  grid-row-end:;
+  grid-column-start:;
+  grid-column-end:;
+}
 
 .ragnarok section:nth-child(5) {
   display: block;
@@ -117,6 +138,9 @@ section > img {
   header {
     display: flex;
     justify-content: space-between;
+    /*Missing 
+    grid-column: ; 
+    You need two values separated by a / to make the header take up two columns.*/
   }
 
   .sidenav > a {
