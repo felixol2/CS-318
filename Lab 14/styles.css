@@ -78,31 +78,30 @@ section:nth-child(2) {
   display: block;
 }
 
-/*In the four declarations below you should have a number value in each of the grid properties to place the items in the correct location on the grid. If you look in the instructions I have a grid image with the values for reference.*/
 section > img {
   max-height: 10rem;
-  grid-row-start:;
-  grid-row-end:;
-  grid-column-start:;
-  grid-column-end:;
+  grid-row-start:1;
+  grid-row-end:4;
+  grid-column-start:1;
+  grid-column-end:2;
 }
 section > h3{
-  grid-row-start:;
-  grid-row-end:;
-  grid-column-start:;
-  grid-column-end:;
+  grid-row-start:1;
+  grid-row-end:2;
+  grid-column-start:2;
+  grid-column-end:3;
 }
 section > h4{
-  grid-row-start:;
-  grid-row-end:;
-  grid-column-start:;
-  grid-column-end:;
+  grid-row-start:2;
+  grid-row-end:3;
+  grid-column-start:2;
+  grid-column-end:3;
 }
 section > p{
-  grid-row-start:;
-  grid-row-end:;
-  grid-column-start:;
-  grid-column-end:;
+  grid-row-start:4;
+  grid-row-end:5;
+  grid-column-start:1;
+  grid-column-end:3;
 }
 
 .ragnarok section:nth-child(5) {
@@ -138,9 +137,7 @@ section > p{
   header {
     display: flex;
     justify-content: space-between;
-    /*Missing 
-    grid-column: ; 
-    You need two values separated by a / to make the header take up two columns.*/
+    grid-column: 1/3;
   }
 
   .sidenav > a {
