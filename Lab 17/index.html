@@ -8,21 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="scripts.js"></script>
 </head>
 <body>
     <header>
     <img src="images/butter-half-logo.svg" alt="butter half logo" width="500"> 
-    <h2>about</h2>
-    <h2>hours</h2>
-    <h2>order</h2>
-    <img src="images/wicker-basket.svg" alt="basket" width="500">
+    <div class="hamburger" onclick="toggleNav()"><hr><hr><hr></div>
+    <nav class="toggle-nav">
+        <a href="#about">About</a>
+        <a href="#hours">Hours</a>
+        <a href="#order">Order <img src="images/wicker-basket.svg" alt="basket" width="500"></a>
+    </nav>
+    
     </header>
     <main>
     <section class="butterhalf">
     <h1>The Butter Half Bakery</h1>
     <p>"Im gonna eat you 'cause baby<br>You're my butter half</p>
     </section>
-    <section class="aboutthebakery">
+    <section class="aboutthebakery" id="about">
         <img src="images/about.png" alt="about" width="500">
         <div><h2>About the Bakery</h2>
         <p>We make all of our food from scratch, ranging from authentic French baked goods to an
@@ -45,7 +49,7 @@ an assortment of imported fine teas. Backroads Coffee & Tea thrived throughout t
 nineties roasting specialty coffees for their own use, as well as, offering their customers the
 ability to purchase their coffees through mail order or direct in-house.</p></div>
     </section>
-    <section class="hours">
+    <section class="hours" id="hours">
         <img src="images/timer.svg" alt="timer" width="500">
         <div><h2>Hours</h2>
         <p>Monday-Thursday<br>Friday<br>Saturday<br>Sunday</p>
@@ -65,7 +69,7 @@ ability to purchase their coffees through mail order or direct in-house.</p></di
         <img src="images/donut.svg" alt="donut" width="500">
         <img src="images/pudding.svg" alt="pudding" width="500">
     </section>
-    <div class="goodies">
+    <div class="goodies" id="order">
     <section class="turtledanish">
         <h2>Turtle Danish</h2>
         <img src="images/danish.png" alt="danish" width="500">
